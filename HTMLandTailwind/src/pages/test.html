@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Dropdown</title>
+  <link rel="stylesheet" href="../output.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="relative">
+    <button id="dropdownButton" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none">
+      Dropdown
+    </button>
+    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg w-48">
+      <ul class="py-1">
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 1</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 2</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 3</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</body> -->
+
+
+</html> 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Dropdown on Hover</title>
+<link rel="stylesheet" href="../output.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="relative group">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none">
+      Hover me
+    </button>
+    <div class="absolute hidden group-hover:block right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg w-48">
+      <ul class="py-1">
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 1</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 2</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 3</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html> 
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../output.css">
+  <title>Tailwind CSS Hover Dropdown</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="relative">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none">
+      Hover me
+    </button>
+    <div class="absolute hidden group-hover:block right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg w-48">
+      <ul class="py-1">
+        <li>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 1</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 2</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for handling dropdown item selection
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', function() {
+        alert(`Selected: ${this.textContent}`);
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+ -->
