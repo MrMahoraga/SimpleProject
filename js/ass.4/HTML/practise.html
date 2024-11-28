@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Table</title>
+    <link rel="stylesheet" href="./practise.css">
+</head>
+<body>
+   
+    <div class="table-container">
+        <table border = "2" id="orderTable">
+            <thead> 
+                <tr class="kill">
+                    <th class="ravi">Date</th>
+                    <th class="ravi">Order ID</th>
+                    <th class="ravi">Name</th>
+                    <th class="ravi">Price</th>
+                    <th class="ravi">Quantity</th>
+                    <th class="ravi">Total</th>
+                </tr>
+            </thead>
+            <tbody id="tableRows">
+                
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const orders = [
+            { date: '2017-09-29 01:22', orderId: '200398', name: 'iPhone X 64Gb Grey', price: 999.00, quantity: 1 },
+            { date: '2017-09-28 05:57', orderId: '200397', name: 'Samsung S8 Black', price: 756.00, quantity: 1 },
+            { date: '2017-09-26 05:57', orderId: '200396', name: 'Game Console Controller', price: 22.00, quantity: 2 },
+            { date: '2017-09-25 23:06', orderId: '200392', name: 'USB 3.0 Cable', price: 10.00, quantity: 3 },
+            { date: '2017-09-24 05:57', orderId: '200391', name: 'Smartwatch 4.0 LTE Wifi', price: 199.00, quantity: 6 },
+            { date: '2017-09-23 05:57', orderId: '200390', name: 'Camera C430W 4k', price: 699.00, quantity: 1 },
+            { date: '2017-09-22 05:57', orderId: '200389', name: 'Macbook Pro Retina 2017', price: 2199.00, quantity: 1 },
+            { date: '2017-09-21 05:57', orderId: '200388', name: 'Game Console Controller', price: 999.00, quantity: 1 },
+            { date: '2017-09-19 05:57', orderId: '200387', name: 'iPhone X 64Gb Grey', price: 999.00, quantity: 1 },
+            { date: '2017-09-18 05:57', orderId: '200386', name: 'iPhone X 64Gb Grey', price: 999.00, quantity: 1 },
+            { date: '2017-09-22 05:57', orderId: '200389', name: 'Macbook Pro Retina 2017', price: 2199.00, quantity: 1 },
+            { date: '2017-09-21 05:57', orderId: '200388', name: 'Game Console Controller', price: 999.00, quantity: 1 },
+            { date: '2017-09-19 05:57', orderId: '200387', name: 'iPhone X 64Gb Grey', price: 999.00, quantity: 1 },
+            { date: '2017-09-18 05:57', orderId: '200386', name: 'iPhone X 128Gb Grey', price: 1299.00, quantity: 1 },
+        ];
+
+        let rows = '';
+        orders.forEach(order=>{
+            rows = rows + `
+            <tr>
+                <td>${order.date}</td>
+                <td>${order.orderId}</td>
+                <td>${order.name}</td>
+                <td>$${order.price.toFixed(2)}</td>
+                <td>${order.quantity}</td>
+                <td>$${(order.price * order.quantity).toFixed(2)}</td>
+                </tr>
+            `
+        })
+        document.getElementById('tableRows').innerHTML = rows;
+
+    </script>
+</body>
+</html>

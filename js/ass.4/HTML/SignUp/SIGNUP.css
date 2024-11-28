@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+body {
+    background: linear-gradient(135deg, rgb(218, 220, 203), rgb(148, 219, 237));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    /* width: 50%; */
+    width: 420px;
+    height: 350px;
+    margin: 80px;
+    overflow: hidden;
+    background-color: azure;
+    border-radius: 20px;
+    box-shadow: 20px rgba(rgb(195, 97, 97), rgb(55, 128, 55), rgb(8, 8, 23), alpha);
+}
+h1 {
+    margin-left: 152px;
+    background: -webkit-linear-gradient(rgb(237, 194, 86), rgb(121, 53, 48));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label{
+    padding-left: 25px;
+}
+button{
+    margin-left: 175px;
+    margin-top: 15px;
+}
+.kalnia-glaze {
+    font-family: "Kalnia Glaze", serif;
+  }

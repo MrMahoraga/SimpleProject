@@ -1,0 +1,38 @@
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+     align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 420px;
+    width: 650px;
+    background-color: white ;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.kill{
+    background-color: rgb(92, 92, 227);
+    border-radius: 10px;
+    color: brown;
+}
+
+thead{
+    border-radius: 2px;
+    
+}
+
+
+th{
+    margin-left: 5px;
+}

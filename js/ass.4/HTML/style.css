@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background: linear-gradient(120deg, red,pink)
+}
+
+.container{
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.hemant{
+    color: blue;
+    font-style: italic;
+}
+
+tr:hover{
+
+    background-color: aqua;
+}
